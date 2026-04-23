@@ -1,12 +1,7 @@
-# p2p-process-analysis-sql
-
-SQL-based analysis of procurement process performance using event log data, focusing on SLA risk and process bottlenecks.
+# P2P Process Analysis – SLA, Bottlenecks & Risk (SQL Server)
 
 
-## P2P Process Analysis – SLA, Bottlenecks & Risk (SQL Server)
-
-
-**Overview**
+## Overview
 
 This repository presents an end-to-end SQL analysis of Purchase-to-Pay (P2P) process performance using event log data, focused on identifying SLA risk, operational bottlenecks, and delay concentration across business segments.
 
@@ -21,7 +16,7 @@ The project demonstrates:
 The analysis is designed to convert raw process data into actionable insights that support prioritisation, escalation, and process improvement decisions.
 
 
-**Business Questions**
+## Business Questions
 
 The project addresses three core business questions:
 
@@ -35,7 +30,7 @@ The project addresses three core business questions:
    (vendors, companies, spend areas)
 
 
-**Process Scope**
+## Process Scope
 
 The analysis focuses on the core Purchase-to-Pay flow:
 
@@ -61,7 +56,7 @@ Key metrics include:
 - Pareto concentration
 
 
-**Analytical Layers**
+## Analytical Layers
 
 The project is structured into three analytical levels:
 
@@ -99,7 +94,7 @@ Using:
 The analytical flow follows a clear pattern: **performance → diagnosis → prioritisation**.
 
 
-**Data Model**
+## Data Model
 
 Source dataset based on:
 
@@ -119,7 +114,7 @@ Core entities include:
 Case-level metrics were rebuilt using timestamp logic and stage completion milestones.
 
 
-**Key Design Principles**
+## Key Design Principles
 
 - Event timestamps translated into business process stages.
 - Median and percentile metrics used instead of averages for skewed operational data.
@@ -129,7 +124,7 @@ Case-level metrics were rebuilt using timestamp logic and stage completion miles
 - Assumptions and trade-offs explicitly documented.
 
 
-**Key Findings**
+## Key Findings
 
 - Closed-case SLA remained relatively stable, while open backlog increased materially.
 - The **Invoice Receipt → Clear Invoice** stage is the dominant bottleneck.
@@ -138,7 +133,7 @@ Case-level metrics were rebuilt using timestamp logic and stage completion miles
 - Delay risk is driven by both external suppliers and internal downstream execution.
 
 
-**Limitations**
+## Limitations
 
 - Dataset represents historical event-log data rather than live operations.
 - Delay threshold defined analytically for project purposes.
@@ -146,19 +141,24 @@ Case-level metrics were rebuilt using timestamp logic and stage completion miles
 - Findings should be interpreted as process signals, not operational audit conclusions.
 
 
-**Tools & Technologies**
+## Tools & Technologies
 
 - SQL Server – data transformation and analysis  
 - Excel – validation, exploratory analysis, charts  
 - PowerPoint – executive reporting and storytelling  
 
 
-**Deliverables**
+## Deliverables
 
-- SQL analysis scripts  
-- Executive summary report (PDF)  
-- Supporting Excel analysis file  
-- Project documentation
+Available now:
+
+- SQL analysis scripts
+- Executive summary report (PDF)
+
+In progress:
+
+- Supporting Excel analysis file
+- Full project documentation
 
 ---
 **Data source**: van Dongen, B.F., Dataset BPI Challenge 2019. 4TU.Centre for Research Data. 
