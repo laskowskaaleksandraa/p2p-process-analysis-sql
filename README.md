@@ -154,10 +154,10 @@ Available now:
 
 - SQL analysis scripts
 - Executive summary report (PDF)
+- Supporting Excel file with detailed analysis flow
 
 In progress:
 
-- Supporting Excel analysis file
 - Full project documentation
 
 ---
