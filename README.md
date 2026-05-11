@@ -3,22 +3,23 @@
 
 ## Overview
 
-This repository presents an end-to-end SQL analysis of Purchase-to-Pay (P2P) process performance using event log data, focused on identifying SLA risk, operational bottlenecks, and delay concentration across business segments.
+This repository presents an end-to-end SQL analysis of Purchase-to-Pay (P2P) process performance using event log data, focused on analysing SLA risk, process delays and bottlenecks across different business segments.
 
-The project demonstrates:
+The project includes:
 
 - case-level lead time reconstruction from transactional event data,
 - backlog and ageing risk analysis using an as-of-date approach,
 - bottleneck detection across core P2P process stages,
 - segment-level risk analysis (vendors, companies, spend areas),
-- structured analytical outputs prepared for management reporting.
+- analytical outputs prepared for reporting and process review.
 
-The analysis is designed to convert raw process data into actionable insights that support prioritisation, escalation, and process improvement decisions.
+The analysis focuses on identifying process risks, delay drivers and areas requiring operational attention.
+
 
 
 ## Business Questions
 
-The project addresses three core business questions:
+The analysis focuses on three main business questions:
 
 1. Is SLA performance deteriorating over time?  
    (closed cases performance vs growing open backlog)
@@ -91,7 +92,7 @@ Using:
 - Pareto ranking,
 - root-cause comparison by segment.
 
-The analytical flow follows a clear pattern: **performance → diagnosis → prioritisation**.
+The analysis follows the same logic across sections: **performance → diagnosis → prioritisation**.
 
 
 ## Data Model
@@ -120,7 +121,7 @@ Case-level metrics were rebuilt using timestamp logic and stage completion miles
 - Median and percentile metrics used instead of averages for skewed operational data.
 - Delayed and on-time populations analysed separately where required.
 - Concentration metrics used to prioritise highest-impact segments.
-- Outputs structured for downstream reporting in Excel and PowerPoint.
+- Outputs prepared for reporting in Excel and PowerPoint.
 - Assumptions and trade-offs explicitly documented.
 
 
