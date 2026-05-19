@@ -156,10 +156,8 @@ Available now:
 - SQL analysis scripts
 - Executive summary report (PDF)
 - Supporting Excel file with detailed analysis flow
-
-In progress:
-
 - Full project documentation
+
 
 ---
 **Data source**: van Dongen, B.F., Dataset BPI Challenge 2019. 4TU.Centre for Research Data. 
